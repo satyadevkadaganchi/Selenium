@@ -10,6 +10,7 @@ public class Sendkeys {
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.facebook.com");
 		driver.findElement(By.id("email")).sendKeys("I am Satyadev");
-	}
+		driver.findElement(By.name("pass")).sendKeys("s");
+				}
 
 }
