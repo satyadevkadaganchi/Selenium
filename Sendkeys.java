@@ -12,7 +12,7 @@ public class Sendkeys {
 /*		driver.findElement(By.id("email")).sendKeys("I am Satyadev");
 		driver.findElement(By.name("pass")).sendKeys("s"); */
 		
-		driver.findElement(By.className("inputtext_55r1_6luy")).sendKeys("h");
+		driver.findElement(By.className("inputtext _55r1 _6luy")).sendKeys("h");
 				}
 
 }
