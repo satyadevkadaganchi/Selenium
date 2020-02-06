@@ -4,12 +4,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Xpath {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
 		WebDriver driver=new ChromeDriver();
-		driver.get("http://www.facebook.com");
-		driver.findElement(By.xpath("//*[@id=\'loginbutton\']")).click();
+		driver.get("https://www.facebook.com");
+		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("Hello");
+		driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("nk");
+		driver.findElement(By.xpath("//*[@type='submit']")).click();
 	}
-	
 }
